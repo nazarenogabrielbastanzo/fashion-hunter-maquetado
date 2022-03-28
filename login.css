@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #7F1F71;
+  --secondary-color: #EC46A1;
+  --tertiary-color: #F9FEEC;
+  --other-color-1: #F55C3D;
+  --other-color-2: #4A145D;
+}
+.container {
+  width: fit-content;
+  padding: 50px;
+  background: radial-gradient(var(--other-color-1), var(--tertiary-color), var(--secondary-color));
+}
