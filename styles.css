@@ -41,6 +41,7 @@ h3 {
 }
 p {
   font-family: var(--subtitle-font);
+  font-size: smaller;
   color: var(--primary-color);
 }
 input {
@@ -60,10 +61,32 @@ input {
   justify-content: center;
   flex-wrap: wrap;
 }
-.flex-container .flex-children {
+.flex-container .flex-item {
   text-align: center;
   width: 50%;
 }
 .line-right {
   border-right: 1px solid var(--primary-color);
+}
+.profile-photos {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+.profile-photos .flex-item {
+  width: 87.48px;
+  height: 87.48px;
+  margin: 10px;
+  padding: 10px;
+}
+.profile-photos .flex-item img {
+  width: 87.48px;
+  height: 87.48px;
+  border: 2px solid var(--primary-color);
+  border-radius: 100%;
+}
+.photo-selection {
+  width: 75%;
+  margin: auto;
 }

@@ -13,7 +13,7 @@
           <h2>Crear cuenta</h2>
         </div>
         <div class="flex-container">
-          <div class="flex-children">
+          <div class="flex-item">
             <h3>Datos Personales</h3>
             <div class="line-right">
               <input type="text" placeholder="Nombre" autocomplete="off">
@@ -27,9 +27,25 @@
               <input type="password" placeholder="Contraseña" autocomplete="off">
             </div>
           </div>
-          <div class="flex-children">
+          <div class="flex-item">
             <h3>Foto de perfil</h3>
-            <p>Nos encantaría conocerte, pero también puedes elegir un avatar temporario.</p>
+            <div class="photo-selection">
+              <p>Nos encantaría conocerte, pero también puedes elegir un avatar temporario.</p>
+              <div class="flex-container profile-photos">
+                <div class="flex-item"><img src="images/post1.jpg" alt="1"></div>
+                <div class="flex-item"><img src="images/post2.jpg" alt="2"></div>
+                <div class="flex-item"><img src="images/post3.jpg" alt="3"></div>
+                <div class="flex-item"><img src="images/post4.jpg" alt="4"></div>
+                <div class="flex-item"><img src="images/post5.jpg" alt="5"></div>
+                <div class="flex-item"><img src="images/post6.jpg" alt="6"></div>
+              </div>
+              <div class="upload-photo">
+                <button>Upload</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex-item">
+            <button>Vamos allá!</button>
           </div>
         </div>
     </body>
