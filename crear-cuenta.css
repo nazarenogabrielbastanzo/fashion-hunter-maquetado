@@ -13,7 +13,7 @@
   --other-color-1: #F55C3D;
   --other-color-2: #4A145D;
   --title-font: 'Pacifico', cursive;
-  --subtitle-font: 'SF Pro Display', sans-serif;
+  --secondary-font: 'SF Pro Display', sans-serif;
 }
 body {
   margin: 0px;
@@ -35,7 +35,7 @@ h1 {
   margin-left: 49.41px;
 }
 h2 {
-  font-family: var(--subtitle-font);
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
@@ -44,7 +44,7 @@ h2 {
 }
 h3 {
   /**/
-  font-family: var(--subtitle-font);
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 600;
   font-size: 1.62rem;
@@ -53,7 +53,7 @@ h3 {
   color: var(--primary-color);
 }
 p {
-  font-family: var(--subtitle-font);
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 0.81rem;
@@ -63,7 +63,7 @@ p {
 input {
   width: 267px;
   height: 25px;
-  font-family: var(--subtitle-font);
+  font-family: var(--secondary-font);
   font-size: 1rem;
   line-height: 1.2rem;
   margin: 10px;
