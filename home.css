@@ -1,0 +1,172 @@
+@import url(variables.css);
+.title {
+  width: 100%;
+  height: 6rem;
+  background: linear-gradient(
+    to right,
+    var(--tertiary-color),
+    var(--other-color-1),
+    var(--secondary-color)
+  );
+}
+.right {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  width: 150px;
+}
+.right p {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  color: var(--background-color);
+  margin-top: 10px;
+  margin-right: 4px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+}
+.right small {
+  font-weight: lighter;
+}
+.right img {
+  margin: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.img-rounded {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+h1 {
+  display: inline;
+  margin-top: 0px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38.88px;
+  line-height: 6rem;
+  color: var(--primary-color);
+  margin-left: 49.41px;
+}
+
+/* POSTS */
+.posts-container {
+  display: flex;
+  justify-content: center;
+  width: 33.24rem;
+  border: 2px solid var(--other-color-3);
+  margin-left: 11.42rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.posts {
+  margin-top: 1.91rem;
+  margin-bottom: 1.91rem;
+  width: 29.42rem;
+  height: fit-content;
+}
+.post {
+  display: flex;
+}
+.user {
+  display: inline;
+  margin-top: 0px;
+  margin-left: 0.5rem;
+  flex-basis: content;
+}
+.username::before {
+  content: "@";
+}
+.elapsed {
+  flex-basis: 7rem;
+  text-align: right;
+}
+.elapsed p {
+  margin-top: 0px;
+}
+.post-image {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  height: 30rem;
+  border-radius: 20px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+}
+.arrow-up {
+  margin-left: 2.5px;
+}
+.arrow-down, .chat-icon  {
+  margin-left: 50px;
+}
+.favorites {
+  margin-left: 185px;
+  display: flex;
+  align-items: center;
+}
+.favorite-counter {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+/* Shortcuts */
+.shortcuts {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px 26px;
+
+  position: absolute;
+  width: 16.3rem;
+  height: 5.4rem;
+  left: 53.125rem;
+  top: 8rem;
+
+  border: 2px solid #AFA9A9;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.add-new-icon {
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+/* suggestions */
+.suggestions {
+  position: absolute;
+  width: 21.5rem;
+  height: fit-content;
+  left: 50rem;
+  top: 16.47rem;
+  font-weight: bold;
+  border: 2px solid #AFA9A9;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.suggestions-title {
+  margin-left: 0.6rem;
+}
+.suggestion {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  padding: 12px 12px;
+  align-items: center;
+}
+.follow {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.suggestion img {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
