@@ -14,10 +14,12 @@
   --other-color-2: #4A145D;
   --primary-font: 'Pacifico', cursive;
   --secondary-font: 'SF Pro Display', sans-serif;
+  --background-color: #E5E5E5;
 }
 body {
   margin: 0px;
   padding: 0px;
+  background: var(--background-color);
 }
 .title {
   width: 100%;
@@ -74,6 +76,9 @@ input {
 .subtitle {
   text-align: center;
   padding: 1rem;
+}
+.subtitle img {
+  display: none;
 }
 .flex-container {
   display: flex;
@@ -133,4 +138,66 @@ input {
 i.fa-solid {
   color: var(--primary-color);
   margin-right: 7px;
+}
+/* iPads, Tabletas y dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .title {
+    height: auto;
+    background: var(--background-color);
+  }
+  .subtitle {
+    padding: 0px;
+  }
+  .subtitle h2 {
+    margin-bottom: 0px;
+  }
+  .subtitle div {
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+  .subtitle img {
+    cursor: pointer;
+    display: inline;
+    width: 104px;
+    height: 104px;
+    border-radius: 100%;
+    border: 2px solid var(--primary-color);
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 63px;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 0px;
+  }
+  h1, h2, h3 {
+    white-space: nowrap;
+  }
+  h3:first-child {
+    display: none;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-container .flex-item {
+    width: 100%;
+  }
+  .line-right {
+    border-right: 0px;
+  }  
+  .flex-item:nth-child(2) {
+    display: none;
+  }
+  .go {
+    height: 167px;
+  }
+  .go button {
+    margin-bottom: 65px;
+    margin-top: 65px;
+  }
 }
