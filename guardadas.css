@@ -1,2 +1,42 @@
 /* Variables */
 @import url(variables.css);
+
+/* Header */
+@import url(header.css);
+
+.container {
+  position: relative;
+  top: 5rem;
+}
+
+/* Back */
+.back {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.back span {
+  font-size: larger;
+}
+
+/* Saved */
+.saved-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin: 1rem 2rem;
+}
+.saved-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0rem 2rem;
+  border-radius: 10px;
+}
+.saved-item small {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+}
