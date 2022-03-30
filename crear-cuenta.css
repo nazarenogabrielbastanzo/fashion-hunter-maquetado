@@ -115,7 +115,7 @@ i.fa-solid {
 }
 
 /* iPads, Tabletas y dispositivos móviles */
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .title {
     height: auto;
     background: var(--background-color);
