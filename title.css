@@ -1,0 +1,55 @@
+.title {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 5rem;
+  background: linear-gradient(
+    to right,
+    var(--tertiary-color),
+    var(--other-color-1),
+    var(--secondary-color)
+  );
+}
+.right {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  width: 150px;
+}
+.right p {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  color: var(--background-color);
+  margin-top: 10px;
+  margin-right: 4px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+}
+.right small {
+  font-weight: lighter;
+}
+.right img {
+  margin: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.img-rounded {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+h1 {
+  display: inline;
+  margin-top: 0px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38.88px;
+  line-height: 5rem;
+  color: var(--primary-color);
+  margin-left: 49.41px;
+}
