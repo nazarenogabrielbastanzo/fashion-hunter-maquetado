@@ -1,8 +1,8 @@
 /* Variables */
 @import url(variables.css);
 
-/* Title */
-@import url(title.css);
+/* Header */
+@import url(header.css);
 
 /* POSTS */
 .posts-container {

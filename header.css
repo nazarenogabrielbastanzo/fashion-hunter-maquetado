@@ -14,7 +14,7 @@
 .right {
   position: absolute;
   right: 40px;
-  top: 20px;
+  top: 1rem;
   width: 150px;
 }
 .right p {
