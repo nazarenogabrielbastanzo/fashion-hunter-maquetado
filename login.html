@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Fashion Hunter : Home</title>
+        <script
+      src="https://kit.fontawesome.com/47e2b6eac0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+      <div class="inicio">
+        <section class="galeria">
+            <img src="images/login/malik-skydsgaard-qATVOVghbTk-unsplash.jpg">
+        </section>
+        <section class="inicioSesion">
+            <div class="login">
+                <h1>Fashion Hunter</h1>
+                <p>La red social en la que tu estilo habla por vos</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn btn-success" id="google-button">
+                                Iniciar Sesion con Google
+                            </button>
+                        </div>
+                    </div>
+                    <h3> <i class="far fa-circle"></i> </h3>
+                </div>
+    
+                <div class="container">
+                    <form class="form" method="post">
+                        <input type="text" #username name="username" placeholder="Nombre de Usuario" autocomplete="off" required>
+                        <br>
+                        <input type="password" #password name="password" placeholder="Password"  autocomplete="off" required>
+                        <br>
+                        <small class="forgotten-password">¿Has olvidado tu contraseña?</small>
+                        <button class="btn btn-success" type="submit" id="login-button" (click)="login()">Iniciar
+                            Sesión</button>
+                    </form>
+    
+                    <h4 class="crear-cuenta"><small>¿No tenés cuenta?</small> <a href="#">Crear cuenta</a></h4>
+                        <img src="images/login/en_badge_web_generic.png" id="google">
+                        <img src="images/login/apple-app-store-icon-e1485370451143.png" id="apple">
+                        <hr/>
+                        <div class="instagram">
+                        <i class="fab fa-instagram"></i><h4> @fashionhunter_arg</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </body>
+</html>
