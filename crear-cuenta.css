@@ -5,7 +5,7 @@
 @import url(header.css);
 
 /* Main Content */
-.container {
+.container1 {
   position: relative;
   z-index: -1;
   top: 5rem;
@@ -174,5 +174,6 @@ i.fa-solid {
   .go button {
     margin-bottom: 65px;
     margin-top: 65px;
+    cursor: pointer;
   }
 }
