@@ -167,4 +167,5 @@ small.forgotten-password {
   display: block;
   text-align: right;
   width: 72%;
+  cursor: pointer;
 }
