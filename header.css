@@ -10,6 +10,7 @@
     var(--other-color-1),
     var(--secondary-color)
   );
+  z-index: 1;
 }
 .right {
   position: absolute;
