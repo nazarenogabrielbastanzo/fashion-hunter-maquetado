@@ -87,6 +87,9 @@
   box-sizing: border-box;
   border-radius: 10px;
 }
+.shortcuts img {
+  cursor: pointer;
+}
 .add-new-icon {
   margin-right: 2.5rem;
   margin-left: 2.5rem;
