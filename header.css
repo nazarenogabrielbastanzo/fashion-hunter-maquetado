@@ -31,6 +31,7 @@
 }
 .right small {
   font-weight: lighter;
+  cursor: pointer;
 }
 .right img {
   margin: 0px;
