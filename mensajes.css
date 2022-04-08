@@ -119,6 +119,28 @@
   bottom: 0px;
   border: 1px solid #afa9a9;
   border-radius: 10px;
-  width: 95%;
-  margin: 15px;
+  width: 90%;
+  margin: 20px;
+  outline: none;
+  padding: 10px 10px 10px 35px;
+}
+.the-messages input:content {
+  transform: translateX(25px);
+}
+.the-messages img {
+  position: absolute;
+  bottom: 0px;
+  transform: translateX(25px) translateY(-25px);
+}
+.chat-user {}
+.chat-user img {
+  position: absolute;
+  top: 35px;
+  left: -10px;
+  width: 38px;
+}
+.user-information {
+  position: absolute;
+  top: 17.5px;
+  left: 70px;
 }
