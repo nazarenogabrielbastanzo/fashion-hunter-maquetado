@@ -21,8 +21,9 @@
   font-size: 1.5rem;
 }
 
-/*  */
-.messages-container {}
+/* Contenedor */
+.messages-container {
+}
 
 /* Active messages */
 .active-messages {
@@ -32,17 +33,17 @@
   left: 7rem;
   top: 5rem;
 
-  border: 2px solid #AFA9A9;
+  border: 2px solid #afa9a9;
   box-sizing: border-box;
   border-radius: 10px;
 }
 
 .active-messages {
-  height: fit-content;
+  height: calc(100vh - 11rem);
 }
 
 .active-messages-header {
-  border-bottom: 2px solid #AFA9A9;
+  border-bottom: 2px solid #afa9a9;
   height: 3.5rem;
 }
 .active-messages-header span {
@@ -61,7 +62,7 @@
   flex-direction: row;
   align-items: center;
   height: fit-content;
-  border-bottom: 2px solid #AFA9A9;
+  border-bottom: 2px solid #afa9a9;
 }
 .active-messages-item img {
   width: 56px;
@@ -75,7 +76,7 @@
   font-weight: lighter;
 }
 
-.active-messages-item span>small {
+.active-messages-item span > small {
   font-weight: bolder;
 }
 
@@ -95,4 +96,29 @@
 }
 .connection-indicator.readed {
   background: transparent;
+}
+
+/* The messages */
+.the-messages {
+  position: absolute;
+  width: 45rem;
+  height: calc(100vh - 11rem);
+  left: 33.7rem;
+  top: 5rem;
+
+  border: 2px solid #afa9a9;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.the-messages-header {
+  border-bottom: 2px solid #afa9a9;
+  height: 3.5rem;
+}
+.the-messages input {
+  position: absolute;
+  bottom: 0px;
+  border: 1px solid #afa9a9;
+  border-radius: 10px;
+  width: 95%;
+  margin: 15px;
 }
