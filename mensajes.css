@@ -1,0 +1,98 @@
+@import url("variables.css");
+@import url("header.css");
+
+/* Main content */
+.container {
+  position: relative;
+  top: 5rem;
+}
+
+/* Back */
+.back {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+.back img {
+  cursor: pointer;
+}
+.back span {
+  font-size: 1.5rem;
+}
+
+/*  */
+.messages-container {}
+
+/* Active messages */
+.active-messages {
+  position: absolute;
+  width: 25rem;
+  height: 43rem;
+  left: 7rem;
+  top: 5rem;
+
+  border: 2px solid #AFA9A9;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.active-messages {
+  height: fit-content;
+}
+
+.active-messages-header {
+  border-bottom: 2px solid #AFA9A9;
+  height: 3.5rem;
+}
+.active-messages-header span {
+  position: absolute;
+  margin: 15px;
+}
+.active-messages-header img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 10px 20px 10px 10px;
+  cursor: pointer;
+}
+.active-messages-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+  border-bottom: 2px solid #AFA9A9;
+}
+.active-messages-item img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  margin: 20px;
+}
+
+.active-messages-item span.user-name {
+  font-size: 1.35rem;
+  font-weight: lighter;
+}
+
+.active-messages-item span>small {
+  font-weight: bolder;
+}
+
+.connection-indicator {
+  position: absolute;
+  right: 0px;
+  margin: 20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.connection-indicator.unreaded {
+  background: var(--secondary-color);
+}
+.connection-indicator.active {
+  background: var(--primary-color);
+}
+.connection-indicator.readed {
+  background: transparent;
+}
