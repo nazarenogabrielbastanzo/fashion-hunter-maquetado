@@ -127,20 +127,62 @@
 .the-messages input:content {
   transform: translateX(25px);
 }
-.the-messages img {
+.emoji-icon {
   position: absolute;
   bottom: 0px;
   transform: translateX(25px) translateY(-25px);
+  width: 24px;
 }
 .chat-user {}
 .chat-user img {
   position: absolute;
-  top: 35px;
-  left: -10px;
-  width: 38px;
+  top: 10px;
+  left: 15px;
+  width: 30px;
 }
 .user-information {
   position: absolute;
   top: 17.5px;
-  left: 70px;
+  left: 60px;
+}
+
+.messages-box {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: calc(100vh - 20rem);
+  width: content;
+}
+.incoming-messages {
+  display: block;
+  position: relative;
+  bottom: 0px;
+  left: 15px;
+  /* transform: translateX(25px); */
+  margin-top: 10px;
+}
+.outcoming-messages {
+  display: block;
+  position: relative;
+  bottom: 0px;
+  right: -430px;
+  margin-top: 10px;
+}
+.incoming-messages img, .outcoming-messages img {
+  width: 48px;
+}
+.incoming-messages .message {
+  display: inline-block;
+  transform: translateY(20px);
+  margin: 10px 5px;
+  background: #afa9a9;
+  padding: 10px;
+  border-radius: 0px 10px 10px 10px;
+}
+.outcoming-messages .message {
+  display: inline-block;
+  transform: translateY(5px);
+  margin: 10px 5px;
+  background: #afa9a9;
+  padding: 10px;
+  border-radius: 10px 0px 10px 10px;
 }
