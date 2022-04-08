@@ -132,6 +132,7 @@
   bottom: 0px;
   transform: translateX(25px) translateY(-25px);
   width: 24px;
+  cursor: pointer;
 }
 .chat-user {}
 .chat-user img {
@@ -147,6 +148,8 @@
 }
 
 .messages-box {
+  display: flex;
+  flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
   height: calc(100vh - 20rem);
@@ -157,15 +160,16 @@
   position: relative;
   bottom: 0px;
   left: 15px;
-  /* transform: translateX(25px); */
   margin-top: 10px;
+  align-self: flex-start;
 }
 .outcoming-messages {
   display: block;
   position: relative;
   bottom: 0px;
-  right: -430px;
+  margin-right: 10px;
   margin-top: 10px;
+  align-self: flex-end;
 }
 .incoming-messages img, .outcoming-messages img {
   width: 48px;
@@ -185,4 +189,11 @@
   background: #afa9a9;
   padding: 10px;
   border-radius: 10px 0px 10px 10px;
+}
+.send-icon {
+  width: 24px;
+  position: absolute;
+  right: 20px;
+  bottom: 26px;
+  cursor: pointer;
 }
