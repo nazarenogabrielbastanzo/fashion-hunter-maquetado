@@ -123,6 +123,7 @@
   margin: 20px;
   outline: none;
   padding: 10px 0px 10px 35px;
+  background: var(--background-color);
 }
 .the-messages input:content {
   transform: translateX(25px);
