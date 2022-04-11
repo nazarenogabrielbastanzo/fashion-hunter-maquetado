@@ -4,9 +4,9 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid #999; /* Opcional */
-  margin: 25px auto;
-  width: 37.5rem;
-  height: 35.25rem;
+  margin: 25px auto; /* Opcional */
+  width: 37rem;
+  height: 34rem;
   border-radius: 20px;
 }
 h2 {
