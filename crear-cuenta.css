@@ -1,8 +1,8 @@
 /* Variables */
-@import url(variables.css);
+@import url("shared/variables.css");
 
 /* Header */
-@import url(header.css);
+@import url("shared/header.css");
 
 /* Main Content */
 .container {
@@ -101,7 +101,7 @@ input {
   color: var(--primary-color);
   cursor: pointer;
 }
-.go button{
+.go button {
   width: 196.02px;
   height: 37.26px;
   background: var(--secondary-color);
@@ -153,7 +153,9 @@ i.fa-solid {
     line-height: 24px;
     margin-top: 0px;
   }
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     white-space: nowrap;
   }
   h3:first-child {
@@ -167,7 +169,7 @@ i.fa-solid {
   }
   .line-right {
     border-right: 0px;
-  }  
+  }
   .flex-item:nth-child(2) {
     display: none;
   }
