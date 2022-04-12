@@ -1,5 +1,5 @@
 /* Variables */
-@import url(variables.css);
+@import url("shared/variables.css");
 
 /* Header */
 @import url("shared/header.css");
