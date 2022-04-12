@@ -81,7 +81,7 @@
   position: fixed;
   width: 15rem;
   height: 5.4rem;
-  left: 52rem;
+  left: 49rem;
   top: 6.5rem;
 
   border: 2px solid #afa9a9;
@@ -99,9 +99,9 @@
 /* suggestions */
 .suggestions {
   position: fixed;
-  width: 19rem;
+  width: fit-content;
   height: fit-content;
-  left: 50rem;
+  left: 49rem;
   top: 14.5rem;
   font-weight: bold;
   border: 2px solid #afa9a9;
@@ -115,9 +115,15 @@
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding: 10px 12px;
   align-items: center;
+}
+.suggestion-name, .follow, .suggestion img {
+  margin: auto 10px;
+}
+.suggestion-name {
+  white-space: nowrap;
 }
 .follow {
   color: var(--primary-color);
