@@ -23,11 +23,15 @@
   font-weight: bold;
   color: var(--background-color);
   margin-top: 10px;
-  margin-right: 4px;
-  position: absolute;
+  margin-right: 40px;
+  position: relative;
   top: 0px;
-  left: 0px;
-  text-align: center;
+  right: 65px;
+  text-align: right;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .right small {
   font-weight: lighter;
