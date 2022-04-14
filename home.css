@@ -26,6 +26,12 @@
 .post {
   display: flex;
 }
+.img-rounded {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  margin-right: 5px;
+}
 .user {
   display: inline;
   margin-top: 0px;
@@ -75,11 +81,10 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-  padding: 24px 26px;
+  justify-content: space-between;
 
   position: fixed;
-  width: 15rem;
+  width: fit-content;
   height: 5.4rem;
   left: 49rem;
   top: 6.5rem;
@@ -90,6 +95,13 @@
 }
 .shortcuts img {
   cursor: pointer;
+  margin: auto 20px;
+}
+.shortcuts img:first-child {
+  margin-left: 25px;
+}
+.shortcuts img:last-child {
+  margin-right: 25px;
 }
 .add-new-icon {
   margin-right: 2.5rem;
@@ -119,7 +131,9 @@
   padding: 10px 12px;
   align-items: center;
 }
-.suggestion-name, .follow, .suggestion img {
+.suggestion-name,
+.follow,
+.suggestion img {
   margin: auto 10px;
 }
 .suggestion-name {
@@ -133,4 +147,28 @@
   width: 40px;
   height: 40px;
   border-radius: 100%;
+}
+.crear-publicacion {
+  position: absolute;
+  top: 125px;
+  right: 12px;
+  display: none;
+}
+.crear-oculto {
+  display: none;
+}
+.crear-visible {
+  display: flex;
+  flex-direction: column;
+}
+.crear-publicacion button {
+  background: var(--primary-color);
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 15px;
+  height: 25px;
+  line-height: 0px;
+  cursor: pointer;
 }

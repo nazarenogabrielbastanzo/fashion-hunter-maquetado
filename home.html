@@ -8,6 +8,10 @@
       src="https://kit.fontawesome.com/47e2b6eac0.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -34,7 +38,11 @@
             <p><small>Hace 2h</small></p>
           </div>
         </div>
-        <img src="images/feed-inicio/nati-melnychuk-oO0JAOJhquk-unsplash.jpg" class="post-image" alt="" />
+        <img
+          src="images/feed-inicio/nati-melnychuk-oO0JAOJhquk-unsplash.jpg"
+          class="post-image"
+          alt=""
+        />
         <div class="actions">
           <img src="images/icons/up_arrow.png" alt="" class="arrow-up" />
           <img src="images/icons/down_arrow.png" alt="" class="arrow-down" />
@@ -62,7 +70,11 @@
             <p><small>Hace 6h</small></p>
           </div>
         </div>
-        <img src="images/feed-inicio/danilo-capece-NoVnXXmDNi0-unsplash.jpg" class="post-image" alt="" />
+        <img
+          src="images/feed-inicio/danilo-capece-NoVnXXmDNi0-unsplash.jpg"
+          class="post-image"
+          alt=""
+        />
         <div class="actions">
           <img src="images/icons/up_arrow.png" alt="" class="arrow-up" />
           <img src="images/icons/down_arrow.png" alt="" class="arrow-down" />
@@ -77,9 +89,14 @@
 
     <!-- Accesos directos -->
     <div class="shortcuts">
-      <img src="images/icons/Favorite.png" alt="">
-      <img src="images/icons/Add_New.png" alt="" class="add-new-icon">
-      <img src="images/icons/chat.png" alt="">
+      <img src="images/icons/Favorite.png" alt="" />
+      <img
+        src="images/icons/Add_New.png"
+        alt=""
+        class="add-new-icon"
+      />
+      <img src="images/icons/chat.png" alt="" />
+      <img src="images/icons/heart.png" alt="" />
     </div>
 
     <!-- suggestions -->
@@ -87,38 +104,66 @@
       <p class="suggestions-title">Sugerencias para ti</p>
       <!-- Suggestion -->
       <div class="suggestion">
-        <img src="images/avatar/sara.png" alt="">
+        <img src="images/avatar/sara.png" alt="" />
         <span class="suggestion-name">Natacha Celeste Bastanzo</span>
         <span class="follow">Seguir</span>
       </div>
 
       <!-- Another suggestion -->
       <div class="suggestion">
-        <img src="images/avatar/manuel.png" alt="">
+        <img src="images/avatar/manuel.png" alt="" />
         <span class="suggestion-name">Manuel García</span>
         <span class="follow">Seguir</span>
       </div>
 
       <!-- suggestion 3 -->
       <div class="suggestion">
-        <img src="images/avatar/lucia.png" alt="">
+        <img src="images/avatar/lucia.png" alt="" />
         <span class="suggestion-name">Lucía Aplon</span>
         <span class="follow">Seguir</span>
       </div>
 
       <!-- suggestion 4 -->
       <div class="suggestion">
-        <img src="images/avatar/sofia.png" alt="">
+        <img src="images/avatar/sofia.png" alt="" />
         <span class="suggestion-name">Sofía Weish</span>
         <span class="follow">Seguir</span>
       </div>
 
       <!-- Suggestion 5 -->
       <div class="suggestion">
-        <img src="images/avatar/descarga.png" alt="">
+        <img src="images/avatar/descarga.png" alt="" />
         <span class="suggestion-name">Zara Argentina</span>
         <span class="follow">Seguir</span>
       </div>
     </div>
+
+    <div class="crear-publicacion">
+      <button>Crear publicación</button>
+      <button>Editar perfil</button>
+    </div>
+    <script>
+      let elemAddNewIcon = document.querySelector(".add-new-icon");
+      let elemCrearPublicacion = document.querySelector(".crear-publicacion");
+      let oculto = true;
+      elemAddNewIcon.addEventListener('click', mostrarCrearPublicacion);
+      function mostrarCrearPublicacion() {
+        if (oculto) {
+          elemCrearPublicacion.classList.add(
+            "animate__animated",
+            "animate__fadeInRight",
+            "animate__faster",
+            "crear-visible"
+          );
+          oculto = !oculto;
+        } else {
+          elemCrearPublicacion.classList.add(
+            "animate__fadeOutRight",
+            "crear-oculto"
+          );
+          oculto = !oculto;
+        }
+      }
+    </script>
   </body>
 </html>
