@@ -142,28 +142,7 @@
       <button>Crear publicación</button>
       <button>Editar perfil</button>
     </div>
-    <script>
-      let elemAddNewIcon = document.querySelector(".add-new-icon");
-      let elemCrearPublicacion = document.querySelector(".crear-publicacion");
-      let oculto = true;
-      elemAddNewIcon.addEventListener('click', mostrarCrearPublicacion);
-      function mostrarCrearPublicacion() {
-        if (oculto) {
-          elemCrearPublicacion.classList.add(
-            "animate__animated",
-            "animate__fadeInRight",
-            "animate__faster",
-            "crear-visible"
-          );
-          oculto = !oculto;
-        } else {
-          elemCrearPublicacion.classList.add(
-            "animate__fadeOutRight",
-            "crear-oculto"
-          );
-          oculto = !oculto;
-        }
-      }
-    </script>
+    
+    <script src="home.js"></script>
   </body>
 </html>
