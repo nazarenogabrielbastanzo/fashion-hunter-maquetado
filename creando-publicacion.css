@@ -1,0 +1,48 @@
+@import url("shared/variables.css");
+
+.container {
+  text-align: center;
+}
+
+/* Back */
+.header {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header span {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* horizontal divider */
+.horizontal-div {
+  border-bottom: 1px solid var(--primary-color);
+  margin-top: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+.flex-container p {
+  line-height: 45px;
+}
+
+.home {
+  margin-top: 20px;
+  border: 0px;
+  background: transparent;
+  color: var(--primary-color);
+  font-size: large;
+  padding: 10px 30px;
+  cursor: pointer;
+}
