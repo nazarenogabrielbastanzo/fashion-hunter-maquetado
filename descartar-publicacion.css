@@ -13,7 +13,7 @@
   justify-content: center;
 }
 .header span {
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bold;
 }
 
@@ -30,7 +30,7 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  font-size: x-large;
+  font-size: large;
 }
 
 .flex-container p {
@@ -42,7 +42,7 @@
   border: 0px;
   background: var(--primary-color);
   color: white;
-  font-size: x-large;
+  font-size: large;
   padding: 10px 30px;
   border-radius: 10px;
   cursor: pointer;
@@ -53,7 +53,7 @@
   border: 0px;
   background: transparent;
   color: var(--primary-color);
-  font-size: x-large;
+  font-size: large;
   padding: 10px 30px;
   cursor: pointer;
 }
