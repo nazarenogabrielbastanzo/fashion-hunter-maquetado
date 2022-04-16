@@ -54,6 +54,10 @@
   margin-top: 15px;
 }
 
+.location span {
+  font-size: large;
+}
+
 .vertical-div {
   width: 0px;
   height: 400px;
@@ -66,6 +70,15 @@
   border-radius: 20px;
   width: 430px;
   height: 430px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -122,4 +135,25 @@ textarea::placeholder {
 .character-limit {
   margin: 15px;
   align-self: flex-end;
+}
+
+.actions {
+  align-self: flex-end;
+}
+
+.omitir {
+  border: 0px;
+  background: transparent;
+  color: var(--primary-color);
+  font-size: medium;
+  padding: 10px 30px;
+}
+
+.publicar {
+  border: 0px;
+  background: var(--primary-color);
+  color: white;
+  font-size: medium;
+  padding: 10px 30px;
+  border-radius: 10px;
 }
