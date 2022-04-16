@@ -1,0 +1,125 @@
+@import url("shared/variables.css");
+/* Back */
+.back {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.back span {
+  font-size: larger;
+}
+
+/* horizontal divider */
+.horizontal-div {
+  border-bottom: 1px solid var(--primary-color);
+  margin-top: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.flex-item-1,
+.flex-item-2 {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-item-1 .img-post {
+  width: 400px;
+  height: 400px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.vertical-div {
+  width: 0px;
+  height: 400px;
+  border-left: 1px solid var(--primary-color);
+  margin: auto 55px;
+}
+
+.flex-item-2 {
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  width: 430px;
+  height: 430px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.user-information {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  border-bottom: 2px solid #666;
+  width: 100%;
+}
+
+.user-information img, .user-information span {
+  margin: 15px auto 15px 15px;
+}
+
+.user-information img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.user-information span {
+  font-size: x-large;
+  width: 100%;
+  text-align: left;
+}
+
+textarea {
+  width: 400px;
+  height: 220px;
+  resize: none;
+  margin: 0px auto;
+  border: 0px;
+  padding: 15px;
+  outline-width: 0px;
+  background: var(--background-color);
+  font-family: var(--secondary-font);
+  font-size: large;
+}
+
+textarea::placeholder {
+  font-family: var(--secondary-font);
+  font-size: large;
+}
+
+.character-limit {
+  margin: 15px;
+  align-self: flex-end;
+}
