@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   width: 33.24rem;
-  border: 2px solid var(--other-color-3);
+  /* border: 2px solid var(--other-color-3); */
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 10px;
