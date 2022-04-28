@@ -196,8 +196,12 @@
   display: flex;
 }
 .horizontal-line {
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   width: 100%;
+}
+.horizontal-line:last-child {
+  border-bottom: 3px solid var(--primary-color);
+  width: 15%;
 }
 .notification {
   margin-top: 10px;
