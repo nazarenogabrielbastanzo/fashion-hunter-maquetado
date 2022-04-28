@@ -172,3 +172,48 @@
   line-height: 0px;
   cursor: pointer;
 }
+
+/* Overlay Notifications */
+.overlay-notifications {
+  position: fixed;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  display: none;
+  z-index: 1;
+  left: 49rem;
+  bottom: 0px;
+  width: 42%;
+  height: calc(100vh - 14.5rem);
+  background-color: #fff;
+}
+.overlay-notifications h2 {
+  font-size: 1rem;
+}
+.overlay-notifications-visible {
+  display: flex;
+}
+.horizontal-line {
+  border-bottom: 2px solid var(--primary-color);
+  width: 100%;
+}
+.notification {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.notification img:first-child {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+.notification img:last-child {
+  cursor: pointer;
+}
