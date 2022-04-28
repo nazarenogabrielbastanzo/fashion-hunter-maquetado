@@ -32,16 +32,16 @@ function mostrarNotifications() {
   if (notificationsHidden) {
     elemOverlayNotifications.classList.add(
       "animate__animated",
-      "animate__fadeInRight",
       "animate__faster",
+      "animate__fadeInRight",
       "overlay-notifications-visible"
     );
     notificationsHidden = false;
   } else {
     elemOverlayNotifications.classList.remove(
       "animate__animated",
-      "animate__fadeInRight",
       "animate__faster",
+      "animate__fadeInRight",
       "overlay-notifications-visible"
     );
     notificationsHidden = true;
