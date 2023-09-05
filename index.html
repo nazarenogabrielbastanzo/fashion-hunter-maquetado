@@ -36,7 +36,7 @@
                         <input type="password" #password name="password" placeholder="Password"  autocomplete="off" required>
                         <br>
                         <small class="forgotten-password">¿Has olvidado tu contraseña?</small>
-                        <button class="btn btn-success" type="submit" id="login-button" (click)="login()">Iniciar
+                        <button class="btn btn-success" type="submit" id="login-button">Iniciar
                             Sesión</button>
                     </form>
     
@@ -51,5 +51,12 @@
             </div>
         </section>
     </div>
+
+    <script>
+        const loginBtn = document.querySelector('#login-button');
+        loginBtn.addEventListener('click', function() {
+            window.location.assign('/home.html');
+        });
+    </script>
     </body>
 </html>
