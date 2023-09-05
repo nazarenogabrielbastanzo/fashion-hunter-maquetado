@@ -30,8 +30,11 @@
   width: 100%;
 }
 
-img {
-  width: 55%;
+.galeria img {
+  width: 65%;
+  height: calc(100% - 100px);
+  object-fit: fill;
+  border-radius: 20px;
 }
 
 .inicioSesion {
@@ -45,6 +48,11 @@ img {
 .login {
   text-align: center;
   width: 100%;
+  margin-top: 10px;
+}
+
+.container {
+  margin-top: 75px;
 }
 
 h1 {
@@ -85,11 +93,16 @@ input {
   border: solid 1px #7f1f71;
   border-radius: 10px;
   width: 297px;
+  color: #7f1f71;
+  font-size: large;
+}
+
+input:focus {
+  outline: 2px solid #7f1f71;
 }
 
 input::placeholder {
-  color: #7f1f71;
-  font-size: 14px;
+  font-size: large;
   padding-left: 10px;
 }
 
@@ -122,8 +135,8 @@ p {
   border-radius: 10px;
   color: #ffff;
   background-color: #ec46a1;
-  margin-top: 10px;
-  margin-bottom: 16px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .far {
@@ -150,31 +163,53 @@ h4 {
 }
 
 hr {
+  text-align: center;
   border: 1px solid #7f1f71;
-  width: 100%;
+  width: 50%;
   margin: 0;
 }
 
-.instagram {
+footer .instagram {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
   font-family: "SF Pro Display", sans-serif;
+  color: #7f1f71;
+  font-size: larger;
 }
 
-.instagram i {
+footer .instagram i {
   margin-right: 10px;
 }
 
-.crear-cuenta a {
+#crear-cuenta a,
+#forgotten-password a {
   color: #7f1f71;
-  text-decoration: none;
 }
 
-small.forgotten-password {
+#crear-cuenta {
+  margin-top: 5px;
+}
+
+#forgotten-password {
   display: block;
-  text-align: right;
-  width: 72%;
-  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  color: #7f1f71;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  float: right;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
