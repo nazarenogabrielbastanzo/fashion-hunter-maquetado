@@ -60,11 +60,17 @@
 
     <script>
         const loginBtn = document.querySelector('#login-button');
+        const crearCuentaLink = document.querySelector('#crear-cuenta a');
 
         loginBtn.addEventListener('click', function (e) {
             e.preventDefault();
             window.location.assign('home.html');
         });
+
+        crearCuentaLink.addEventListener('click', () => {
+            window.location.assign('crear-cuenta.html');
+        })
+                
     </script>
 </body>
 
