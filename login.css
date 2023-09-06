@@ -1,3 +1,5 @@
+@import url("shared/variables.css");
+
 @font-face {
   font-family: "Pacifico";
   src: url("fonts/pacifico/Pacifico-Regular.ttf");
@@ -70,21 +72,24 @@ h1 {
 input {
   padding: 10px;
   margin: 10px;
-  border: solid 1px #7f1f71;
+  border: 1px solid var(--primary-color);
   border-radius: 10px;
   width: 50%;
   min-width: 200px;
-  color: #7f1f71;
+  color: var(--primary-color);
   font-size: large;
 }
 
 input:focus {
-  outline: 2px solid #7f1f71;
+  border: 0;
+  outline: 2px solid var(--primary-color);
 }
 
 input::placeholder {
   font-size: large;
   padding-left: 10px;
+  color: var(--primary-color);
+  font-weight: lighter;
 }
 
 p {
@@ -111,13 +116,14 @@ p {
 #login-button {
   text-align: center;
   padding: 8px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 1rem 1.5rem;
   border-radius: 10px;
-  color: #ffff;
+  color: white;
   background-color: #ec46a1;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border: 0;
+  letter-spacing: 1.5px;
 }
 
 .far {
