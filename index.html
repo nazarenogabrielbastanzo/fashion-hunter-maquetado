@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fashion Hunter - Login</title>
     <script src="https://kit.fontawesome.com/47e2b6eac0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="login.css">
@@ -15,19 +16,10 @@
         </section>
         <section class="inicioSesion">
             <div class="login">
-                <h1>Fashion Hunter</h1>
-                <p><em>La red social en la que tu estilo habla por vos</em></p>
-                <!-- <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <button class="btn btn-success" id="google-button">
-                                Iniciar Sesion con Google
-                            </button>
-                        </div>
-                    </div>
-                    <h3> <i class="far fa-circle"></i> </h3>
-                </div> -->
-
+                <div class="header">
+                    <h1>Fashion&nbsp;Hunter</h1>
+                    <p><em>La red social en la que tu estilo habla por vos</em></p>
+                </div>
                 <div class="container">
                     <h2>Ingresa tu usuario y contraseña</h2>
                     <form class="form" method="post">
@@ -45,8 +37,6 @@
                             contraseña?</small> <a href="javascript:void(0)">Clic aquí</a></h4>
                     <h4 id="crear-cuenta"><small>¿No tenés cuenta?</small> <a href="javascript:void(0)">Crear
                             cuenta</a></h4>
-                    <!-- <img src="images/login/en_badge_web_generic.png" id="google">
-                        <img src="images/login/apple-app-store-icon-e1485370451143.png" id="apple"> -->
                 </div>
             </div>
             <footer>
@@ -56,6 +46,7 @@
                     <h4> @fashionhunter_arg</h4>
                 </div>
             </footer>
+        </section>
     </div>
 
     <script>
@@ -70,7 +61,7 @@
         crearCuentaLink.addEventListener('click', () => {
             window.location.assign('crear-cuenta.html');
         })
-                
+
     </script>
 </body>
 

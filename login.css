@@ -2,31 +2,37 @@
   font-family: "Pacifico";
   src: url("fonts/pacifico/Pacifico-Regular.ttf");
 }
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF");
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .inicio {
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  margin: -8px;
+  display: flex;
+  flex-direction: row;
 }
 
 .galeria {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    202deg,
-    #f08570 12%,
-    #edb0b6 25%,
-    #bd2da8 39%,
-    #ec46a1 54%,
-    #e6b9ba 71%,
-    #f08570 88%
-  );
+  background: linear-gradient(202deg,
+      #f08570 12%,
+      #edb0b6 25%,
+      #bd2da8 39%,
+      #ec46a1 54%,
+      #e6b9ba 71%,
+      #f08570 88%);
   width: 100%;
 }
 
@@ -46,41 +52,19 @@
 }
 
 .login {
+  position: relative;
   text-align: center;
   width: 100%;
-  margin-top: 10px;
 }
 
 h1 {
   color: #7f1f71;
-  font-size: 65px;
+  font-size: 4rem;
   font-family: "Pacifico";
-  margin-bottom: 0;
-  margin-top: 25px;
+  margin: 0 50px;
+  /* margin-top: 25px; */
   font-weight: lighter;
-}
-
-h3 {
-  display: inline-block;
-  position: relative;
-}
-
-h3::after,
-h3::before {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 2px;
-  background-color: #7f1f71;
-  top: 0.6em;
-}
-
-h3::before {
-  left: -170px;
-}
-
-h3::after {
-  right: -170px;
+  margin-top: 10px;
 }
 
 input {
@@ -88,7 +72,8 @@ input {
   margin: 10px;
   border: solid 1px #7f1f71;
   border-radius: 10px;
-  width: 297px;
+  width: 50%;
+  min-width: 200px;
   color: #7f1f71;
   font-size: large;
 }
@@ -208,4 +193,58 @@ footer {
   right: 0;
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+/* iPads, Tabletas y dispositivos móviles */
+@media all and (max-width: 768px) {
+  .inicio {
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .inicioSesion {
+    flex-direction: column;
+  }
+  .galeria {
+    display: none;
+  }
+
+  .galeria img {
+    display: none;
+  }
+  .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 0 10px 0;
+    background: linear-gradient(to right,
+        #f9feec,
+        #f55c3d,
+        #ec46a1);
+    padding: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header h1 {
+    font-size: xx-large;
+    margin: 0;
+  }
+  .header p {
+    margin: 0;
+    width: 300px;
+    font-size: 1rem;
+  }
+  .container h2 {
+    font-size: large;
+  }
+  input::placeholder {
+    font-size: small;
+  }
+  footer {
+    position: relative;
+    height: 2rem;
+    width: 100%;
+  }
 }
