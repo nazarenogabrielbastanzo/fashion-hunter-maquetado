@@ -1,8 +1,36 @@
-/* Variables */
-@import url("shared/variables.css");
-
-/* Header */
-@import url("shared/header.css");
+@import url(shared/variables.css);
+/* // Header */
+.title {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 5rem;
+  background: linear-gradient(
+    to right,
+    var(--tertiary-color),
+    var(--other-color-1),
+    var(--secondary-color)
+  );
+  z-index: 1;
+}
+.img-rounded {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+h1 {
+  display: inline;
+  margin-top: 0px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.43rem;
+  line-height: 5rem;
+  color: var(--primary-color);
+  margin-left: 49.41px;
+  cursor: pointer;
+}
 
 /* Main Content */
 .container {
@@ -13,7 +41,7 @@ h2 {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 2.43rem;
   color: var(--primary-color);
 }
@@ -21,7 +49,7 @@ h3 {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 1.62rem;
+  font-size: 1rem;
   line-height: 1.92rem;
   text-align: center;
   color: var(--primary-color);
@@ -36,7 +64,7 @@ p {
 }
 input {
   width: 267px;
-  height: 20px;
+  height: 1rem;
   font-family: var(--secondary-font);
   font-size: 1rem;
   line-height: 1.2rem;
@@ -46,15 +74,15 @@ input {
   border-radius: 10px;
   color: var(--primary-color);
 }
+input:focus {
+  outline: 1px solid var(--primary-color);
+}
 .subtitle {
   text-align: center;
   padding: 1rem;
 }
 .subtitle h2 {
   margin-bottom: 0px;
-}
-.subtitle img {
-  display: none;
 }
 .flex-container {
   display: flex;
@@ -67,24 +95,31 @@ input {
 }
 .line-right {
   border-right: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.horizontal-line {
+  display: none;
 }
 .profile-photos {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  align-content: space-between;
+  align-content: center;
 }
 .profile-photos .flex-item {
-  width: 88px;
-  height: 88px;
+  width: 10rem;
+  height: 10rem;
   margin: 10px;
   padding: 10px;
 }
 .profile-photos .flex-item img {
-  width: 80px;
-  height: 80px;
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
   border: 2px solid var(--primary-color);
+  padding: 2px;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -93,7 +128,7 @@ input {
   margin: auto;
 }
 .upload-photo button {
-  width: 117.16px;
+  width: 8rem;
   height: 32.4px;
   border: 1px solid var(--primary-color);
   border-radius: 10px;
@@ -102,8 +137,8 @@ input {
   cursor: pointer;
 }
 .go button {
-  width: 196.02px;
-  height: 37.26px;
+  width: 12.5rem;
+  height: 2.5rem;
   background: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
@@ -116,15 +151,25 @@ i.fa-solid {
   color: var(--primary-color);
   margin-right: 7px;
 }
+.file-input {
+  display: none;
+}
+.input-error {
+  color: red;
+  margin: 0;
+  padding: 0;
+}
 
 /* iPads, Tabletas y dispositivos móviles */
 @media all and (max-width: 768px) {
-  .title {
-    height: auto;
-    background: var(--background-color);
+  div.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .subtitle {
     padding: 0px;
+    margin-top: 1rem;
   }
   .subtitle h2 {
     margin-bottom: 0px;
@@ -133,13 +178,43 @@ i.fa-solid {
     margin-top: 44px;
     margin-bottom: 44px;
   }
-  .subtitle img {
+
+  .horizontal-line {
+    display: block;
+    border: 1px solid var(--primary-color);
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  .img-profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .img-profile p {
+    max-width: calc(100vw - 30px);
+  }
+
+  .img-mobile img {
     cursor: pointer;
     display: inline;
     width: 104px;
     height: 104px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 2px solid var(--primary-color);
+    padding: 2px;
+  }
+  .img-mobile button {
+    width: 8rem;
+    height: 32.4px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    margin-top: 22.5px;
+    color: var(--primary-color);
+    cursor: pointer;
   }
   h1 {
     font-size: 36px;
@@ -158,9 +233,6 @@ i.fa-solid {
   h3 {
     white-space: nowrap;
   }
-  h3:first-child {
-    display: none;
-  }
   .flex-container {
     flex-direction: column;
   }
@@ -168,10 +240,7 @@ i.fa-solid {
     width: 100%;
   }
   .line-right {
-    border-right: 0px;
-  }
-  .flex-item:nth-child(2) {
-    display: none;
+    border-right: 0;
   }
   .go {
     height: 167px;

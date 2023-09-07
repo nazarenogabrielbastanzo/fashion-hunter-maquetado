@@ -1,88 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <title>Fashion Hunter -Crear Cuenta</title>
-    <script
-      src="https://kit.fontawesome.com/47e2b6eac0.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="crear-cuenta.css" />
-  </head>
-  <body>
-    <div class="title">
-      <h1>Fashion Hunter</h1>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Hunter -Crear Cuenta</title>
+  <script src="https://kit.fontawesome.com/47e2b6eac0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="crear-cuenta.css" />
+</head>
+
+<body>
+  <div class="title">
+    <h1>Fashion Hunter</h1>
+  </div>
+  <form class="container">
+    <div class="subtitle">
+      <h2>Crear cuenta</h2>
     </div>
-    <form class="container">
-      <div class="subtitle">
-        <h2>Crear cuenta</h2>
-        <div>
-          <img src="images/login.png" alt="" />
+    <div class="flex-container">
+      <div class="flex-item">
+        <h3>Datos Personales</h3>
+        <div class="line-right">
+          <input type="text" placeholder="Nombre" autocomplete="off" />
+          
+          <input type="text" placeholder="Apellido" autocomplete="off" />
+          
+          <input type="text" placeholder="Usuario" autocomplete="off" />
+          
+          <input type="email" placeholder="Email" autocomplete="off" />
+          
+          <input type="password" placeholder="Contraseña" autocomplete="off" />
+          
+          <input type="password" placeholder="Repetir contraseña" autocomplete="off" />
         </div>
       </div>
-      <div class="flex-container">
-        <div class="flex-item">
-          <h3>Datos Personales</h3>
-          <div class="line-right">
-            <input type="text" placeholder="Nombre" autocomplete="off" />
-            <br />
-            <input type="text" placeholder="Apellido" autocomplete="off" />
-            <br />
-            <input type="text" placeholder="Usuario" autocomplete="off" />
-            <br />
-            <input type="email" placeholder="Email" autocomplete="off" />
-            <br />
-            <input
-              type="password"
-              placeholder="Contraseña"
-              autocomplete="off"
-            />
-            <br />
-            <input
-              type="password"
-              placeholder="Confirmar contraseña"
-              autocomplete="off"
-            />
-          </div>
-        </div>
-        <div class="flex-item">
-          <h3>Foto de perfil</h3>
-          <div class="photo-selection">
-            <p>
-              Nos encantaría conocerte, elige una imagen a continuación.
-            </p>
-            <div class="flex-container profile-photos">
-              <div class="flex-item">
-                <img src="images/avatar-crear-cuenta-web/luisana-galicia-rGz2Z6tVaeg-unsplash.jpg" alt="1" />
-              </div>
-              <!-- <div class="flex-item">
-                <img src="images/avatar-crear-cuenta-web/mohammad-metri-E-0ON3VGrBc-unsplash.jpg" alt="2" />
-              </div>
-              <div class="flex-item">
-                <img src="images/avatar-crear-cuenta-web/amy-shamblen-xwM61TPMlYk-unsplash.jpg" alt="3" />
-              </div>
-              <div class="flex-item">
-                <img src="images/avatar-crear-cuenta-web/arno-senoner-oCXVxwTFwqE-unsplash.jpg" alt="4" />
-              </div>
-              <div class="flex-item">
-                <img src="images/avatar-crear-cuenta-web/lensabl-0GfPlommtxM-unsplash.jpg" alt="5" />
-              </div>
-              <div class="flex-item">
-                <img src="images/avatar-crear-cuenta-web/alexandra-gorn-WF0LSThlRmw-unsplash.jpg" alt="6" />
-              </div> -->
-            </div>
-            <div class="upload-photo">
-              <button>
-                <i class="fa-solid fa-arrow-up-from-bracket fa-lg"></i>Subir
-                archivo
-              </button>
+      <div class="flex-item">
+        <h3>Foto de perfil</h3>
+        <div class="photo-selection">
+          <p>
+            Nos encantaría conocerte, elige una imagen a continuación.
+          </p>
+          <div class="flex-container profile-photos">
+            <div class="flex-item">
+              <img src="images/avatar/guest-user.png" alt="Foto de perfil" />
             </div>
           </div>
-        </div>
-        <div class="flex-item go">
-          <button>Vamos allá!</button>
+          <div class="upload-photo">
+            <button>
+              <i class="fa-solid fa-arrow-up-from-bracket fa-lg"></i>Subir
+              archivo
+            </button>
+          </div>
         </div>
       </div>
-    </form>
-  </body>
+      <div class="flex-item go">
+        <button>Vamos allá!</button>
+      </div>
+    </div>
+  </form>
+</body>
+
 </html>
