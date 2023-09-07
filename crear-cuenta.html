@@ -54,10 +54,20 @@
         </div>
       </div>
       <div class="flex-item go">
-        <button>Vamos allá!</button>
+        <button id="go" type="submit">Vamos allá!</button>
       </div>
     </div>
   </form>
+
+  <script>
+    const goBtn = document.querySelector('#go');
+
+    goBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.assign('home.html');
+    })
+  </script>
+  
 </body>
 
 </html>
