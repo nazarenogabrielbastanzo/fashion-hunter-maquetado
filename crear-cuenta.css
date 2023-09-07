@@ -75,7 +75,8 @@ input {
   color: var(--primary-color);
 }
 input:focus {
-  outline: 1px solid var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  outline: 0;
 }
 .subtitle {
   text-align: center;
