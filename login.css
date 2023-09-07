@@ -89,7 +89,6 @@ input::placeholder {
   font-size: large;
   padding-left: 10px;
   color: var(--primary-color);
-  font-weight: lighter;
 }
 
 p {
