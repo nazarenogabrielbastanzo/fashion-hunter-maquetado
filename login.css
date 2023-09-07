@@ -1,14 +1,4 @@
-@import url("shared/variables.css");
-
-@font-face {
-  font-family: "Pacifico";
-  src: url("fonts/pacifico/Pacifico-Regular.ttf");
-}
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF");
-}
+@import url(shared/variables.css);
 
 body {
   margin: 0;
@@ -47,7 +37,7 @@ body {
 
 .inicioSesion {
   display: flex;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: var(--secondary-font), sans-serif;
   color: #7f1f71;
   align-items: flex-start;
   width: 100%;
@@ -60,11 +50,10 @@ body {
 }
 
 h1 {
-  color: #7f1f71;
+  color: var(--primary-color);
   font-size: 4rem;
-  font-family: "Pacifico";
+  font-family: var(--primary-font), cursive;
   margin: 0 50px;
-  /* margin-top: 25px; */
   font-weight: lighter;
   margin-top: 10px;
 }
@@ -101,17 +90,6 @@ p {
   color: #7f1f71;
 }
 
-#google-button {
-  width: 273px;
-  text-align: center;
-  padding: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-radius: 10px;
-  color: #ffff;
-  background-color: #db4a39;
-}
-
 #login-button {
   text-align: center;
   padding: 8px;
@@ -134,20 +112,6 @@ h4 {
   margin-bottom: 0;
 }
 
-#google {
-  width: 138px;
-  height: 44px;
-  margin: 20px;
-  border: 0;
-}
-
-#apple {
-  width: 134px;
-  height: 43px;
-  margin: 20px;
-  border: 0;
-}
-
 hr {
   text-align: center;
   border: 1px solid #7f1f71;
@@ -160,7 +124,7 @@ footer .instagram {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: var(--secondary-font), sans-serif;
   color: #7f1f71;
   font-size: larger;
 }

@@ -3,8 +3,8 @@
   src: url(../fonts/pacifico/Pacifico-Regular.ttf);
 }
 @font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Regular.ttf);
+  font-family: "SF Pro Display";
+  src: url(../fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF);
 }
 :root {
   --primary-color: #7f1f71;
@@ -14,7 +14,7 @@
   --other-color-2: #4a145d;
   --other-color-3: #afa9a9;
   --primary-font: "Pacifico", cursive;
-  --secondary-font: "Open Sans", sans-serif;
+  --secondary-font: "SF Pro Display", sans-serif;
   --background-color: white;
 }
 body {
