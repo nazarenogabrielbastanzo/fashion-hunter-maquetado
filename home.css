@@ -1,10 +1,14 @@
 /* Variables */
-@import url("shared/variables.css");
+@import url(shared/variables.css);
 
 /* Header */
-@import url("shared/header.css");
+@import url(shared/header.css);
 
 /* POSTS */
+.wrapper {
+  min-width: 320px;
+  max-width: 470px;
+}
 .posts-container {
   position: relative;
   top: 5rem;
@@ -17,37 +21,45 @@
   margin-bottom: 1rem;
   border-radius: 10px;
 }
+
 .posts {
   margin-top: 1.91rem;
   margin-bottom: 1.91rem;
   width: 29.42rem;
   height: fit-content;
 }
+
 .post {
   display: flex;
 }
+
 .img-rounded {
   width: 55px;
   height: 55px;
   object-fit: cover;
   margin-right: 5px;
 }
+
 .user {
   display: inline;
   margin-top: 0px;
   margin-left: 0.5rem;
   flex-basis: content;
 }
+
 .username::before {
   content: "@";
 }
+
 .elapsed {
   flex-basis: 7rem;
   text-align: right;
 }
+
 .elapsed p {
   margin-top: 0px;
 }
+
 .post-image {
   display: block;
   margin: 10px auto;
@@ -55,22 +67,31 @@
   height: 30rem;
   border-radius: 20px;
 }
+
 .actions {
   display: flex;
   align-items: center;
+  position: relative;
 }
+
 .arrow-up {
   margin-left: 2.5px;
 }
+
 .arrow-down,
 .chat-icon {
   margin-left: 50px;
 }
+
 .favorites {
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-left: 185px;
   display: flex;
   align-items: center;
 }
+
 .favorite-counter {
   font-size: 25px;
   margin-right: 5px;
@@ -93,16 +114,20 @@
   box-sizing: border-box;
   border-radius: 10px;
 }
+
 .shortcuts img {
   cursor: pointer;
   margin: auto 20px;
 }
+
 .shortcuts img:first-child {
   margin-left: 25px;
 }
+
 .shortcuts img:last-child {
   margin-right: 25px;
 }
+
 .add-new-icon {
   margin-right: 2.5rem;
   margin-left: 2.5rem;
@@ -120,9 +145,11 @@
   box-sizing: border-box;
   border-radius: 10px;
 }
+
 .suggestions-title {
   margin-left: 0.6rem;
 }
+
 .suggestion {
   display: flex;
   flex-direction: row;
@@ -131,36 +158,44 @@
   padding: 10px 12px;
   align-items: center;
 }
+
 .suggestion-name,
 .follow,
 .suggestion img {
   margin: auto 10px;
 }
+
 .suggestion-name {
   white-space: nowrap;
 }
+
 .follow {
   color: var(--primary-color);
   cursor: pointer;
 }
+
 .suggestion img {
   width: 40px;
   height: 40px;
   border-radius: 100%;
 }
+
 .crear-publicacion {
   position: absolute;
   top: 125px;
   right: 12px;
   display: none;
 }
+
 .crear-oculto {
   display: none;
 }
+
 .crear-visible {
   display: flex;
   flex-direction: column;
 }
+
 .crear-publicacion button {
   background: var(--primary-color);
   color: white;
@@ -189,20 +224,25 @@
   height: calc(100vh - 14.5rem);
   background-color: #fff;
 }
+
 .overlay-notifications h2 {
   font-size: 1rem;
 }
+
 .overlay-notifications-visible {
   display: flex;
 }
+
 .horizontal-line {
   border-bottom: 1px solid var(--primary-color);
   width: 100%;
 }
+
 .horizontal-line:last-child {
   border-bottom: 3px solid var(--primary-color);
   width: 15%;
 }
+
 .notification {
   margin-top: 10px;
   display: flex;
@@ -213,11 +253,79 @@
   align-items: center;
   width: 100%;
 }
+
 .notification img:first-child {
   width: 55px;
   height: 55px;
   border-radius: 100%;
 }
+
 .notification img:last-child {
   cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: .5rem;
+    margin-right: 0rem;
+  }
+
+  .posts-container {
+    position: relative;
+    top: 4rem;
+    left: 0;
+    margin-left: .5rem;
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .posts {
+    width: calc(100vw - 2rem);
+    max-width: 470px;
+  }
+
+  .post {
+    width: calc(100vw - 2.5rem);
+    max-width: 470px;
+  }
+  
+  .post-image {
+    max-width: 470px;
+    width: calc(100vw - 2rem);
+    max-height: 18.75rem;
+  }
+
+  .img-rounded {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .shortcuts {
+    display: none;
+  }
+
+  .actions img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .actions img:first-child {
+    width: calc(2rem - 5px);
+    height: calc(2rem - 5px);
+  }
+
+  .arrow-down,
+  .chat-icon {
+    margin-left: 25px;
+  }
 }
