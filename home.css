@@ -115,23 +115,22 @@
   border-radius: 10px;
 }
 
-.shortcuts img {
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size: 2.5rem;
+  color: black;
   cursor: pointer;
-  margin: auto 20px;
+  margin: auto .75rem;
 }
 
-.shortcuts img:first-child {
-  margin-left: 25px;
-}
-
-.shortcuts img:last-child {
-  margin-right: 25px;
-}
-
-.add-new-icon {
+/* .add-new-icon {
   margin-right: 2.5rem;
   margin-left: 2.5rem;
-}
+} */
 
 /* suggestions */
 .suggestions {
@@ -329,11 +328,13 @@
     display: flex;
     position: fixed;
     top: unset;
+    right: unset;
     bottom: 0;
     left: 0;
     background-color: var(--primary-color);
     height: 4rem;
-    width: 100vw;
+    width: 100%;
+    min-width: 100vw;
     border: 0;
     border-radius: 0;
     flex-direction: row;
@@ -341,11 +342,20 @@
     justify-content: space-between;
     align-items: center;
   }
-  .shortcuts img {
-    margin: 7px;
-    width: 30px;
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size: 2.5rem;
+    color: white;
   }
-  .shortcuts img:last-child {
-    margin-right: 1.5rem;
+  .material-symbols-outlined:first-child {
+    margin-left: 1rem;
   }
+  .material-symbols-outlined:last-child {
+    margin-right: 1rem;
+  }
+
 }
