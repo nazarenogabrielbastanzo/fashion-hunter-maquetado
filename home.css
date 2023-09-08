@@ -272,6 +272,7 @@
     align-items: center;
     margin-left: .5rem;
     margin-right: 0rem;
+    margin-bottom: 7rem;
   }
 
   .posts-container {
@@ -310,10 +311,6 @@
     height: 3rem;
   }
 
-  .shortcuts {
-    display: none;
-  }
-
   .actions img {
     width: 2rem;
     height: 2rem;
@@ -327,5 +324,28 @@
   .arrow-down,
   .chat-icon {
     margin-left: 25px;
+  }
+  .shortcuts {
+    display: flex;
+    position: fixed;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    height: 4rem;
+    width: 100vw;
+    border: 0;
+    border-radius: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shortcuts img {
+    margin: 7px;
+    width: 30px;
+  }
+  .shortcuts img:last-child {
+    margin-right: 1.5rem;
   }
 }
