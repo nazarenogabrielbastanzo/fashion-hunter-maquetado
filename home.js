@@ -1,9 +1,18 @@
-let elemAddNewIcon = document.querySelector(".add-new-icon");
-let elemCrearPublicacion = document.querySelector(".crear-publicacion");
+const elemAddNewIcon = document.querySelector(".add-new-icon");
+const elemCrearPublicacion = document.querySelector(".crear-publicacion");
+const elemViewNotifications = document.querySelector('.notifications');
+const elemOverlayNotifications = document.querySelector('.overlay-notifications');
+const elemShortcutIconHome = document.querySelector('.material-symbols-rounded:first-child');
+
 let oculto = true;
-let elemViewNotifications = document.querySelector('.notifications');
-let elemOverlayNotifications = document.querySelector('.overlay-notifications');
 let notificationsHidden = true;
+
+window.addEventListener('load', () => {
+  console.log(this.location.pathname);
+  if (this.location.pathname === '/home.html') {
+    elemShortcutIconHome.classList.add('active-icon');
+  }
+});
 
 elemAddNewIcon.addEventListener("click", mostrarCrearPublicacion);
 elemViewNotifications.addEventListener('click', mostrarNotifications);
