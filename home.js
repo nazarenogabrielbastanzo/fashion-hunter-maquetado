@@ -8,7 +8,6 @@ let oculto = true;
 let notificationsHidden = true;
 
 window.addEventListener('load', () => {
-  console.log(this.location.pathname);
   if (this.location.pathname.includes('/home.html')) {
     elemShortcutIconHome.classList.add('active-icon');
   }
