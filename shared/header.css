@@ -33,7 +33,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.right small {
+#close-session {
   font-weight: lighter;
   cursor: pointer;
 }

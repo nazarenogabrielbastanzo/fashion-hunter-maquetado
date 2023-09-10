@@ -3,6 +3,10 @@ const elemCrearPublicacion = document.querySelector(".crear-publicacion");
 const elemViewNotifications = document.querySelector('.notifications');
 const elemOverlayNotifications = document.querySelector('.overlay-notifications');
 const elemShortcutIconHome = document.querySelector('.material-symbols-rounded:first-child');
+const elemCloseSession = document.querySelector('#close-session');
+const elemModalCloseSession = document.querySelector('#modal-close-session');
+const elemAcceptCloseSessionBtn = document.querySelector('#accept-close-session-btn');
+const elemCancelCloseSessionBtn = document.querySelector('#cancel-close-session-btn');
 
 let oculto = true;
 let notificationsHidden = true;
@@ -15,6 +19,15 @@ window.addEventListener('load', () => {
 
 elemAddNewIcon.addEventListener("click", mostrarCrearPublicacion);
 elemViewNotifications.addEventListener('click', mostrarNotifications);
+elemCloseSession.addEventListener('click', () => {
+  elemModalCloseSession.classList.add('active');
+});
+elemAcceptCloseSessionBtn.addEventListener('click', () => {
+  window.location.assign('/index.html');
+});
+elemCancelCloseSessionBtn.addEventListener('click', () => {
+  elemModalCloseSession.classList.remove('active');
+});
 
 function mostrarCrearPublicacion() {
   if (oculto) {

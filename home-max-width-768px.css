@@ -1,0 +1,158 @@
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: .5rem;
+    margin-right: 0rem;
+    margin-bottom: 7rem;
+}
+
+.posts-container {
+    position: relative;
+    top: 4rem;
+    left: 0;
+    margin-left: .5rem;
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.posts {
+    width: calc(100vw - 2rem);
+    max-width: 470px;
+}
+
+.post {
+    width: calc(100vw - 2.5rem);
+    max-width: 470px;
+}
+
+.post-image {
+    max-width: 470px;
+    width: calc(100vw - 2rem);
+    max-height: 18.75rem;
+}
+
+.img-rounded {
+    width: 3rem;
+    height: 3rem;
+}
+
+.actions img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.actions img:first-child {
+    width: calc(2rem - 5px);
+    height: calc(2rem - 5px);
+}
+
+.arrow-down,
+.chat-icon {
+    margin-left: 25px;
+}
+
+.shortcuts {
+    display: flex;
+    position: fixed;
+    top: unset;
+    right: unset;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    height: 4rem;
+    width: 100%;
+    min-width: 100vw;
+    border: 0;
+    border-radius: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.material-symbols-rounded {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.material-symbols-rounded.active-icon {
+    color: white;
+}
+
+.material-symbols-rounded:first-child {
+    margin-left: 1rem;
+}
+
+.material-symbols-rounded:last-child {
+    margin-right: 1rem;
+}
+
+/* Modal Close Session --> */
+#modal-close-session {
+    display: none;
+}
+#modal-close-session.active {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100vw;
+    height: 115%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-close-session.active .wrapper {
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid var(--other-color-3);
+    border-radius: .5rem;
+    background-color: #fff;
+    padding-bottom: 10px;
+    min-width: 300px;
+    max-width: 470px;
+    padding: 2rem 0;
+    margin-top: 0;
+}
+
+#modal-close-session.active .wrapper p {
+    font-weight: bold;
+    padding: 0;
+}
+
+#modal-close-session.active .actions-on-close {
+    display: flex;
+    flex-direction: column;
+}
+
+#modal-close-session.active .actions-on-close button {
+    border: 0;
+    background-color: transparent;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#modal-close-session.active .actions-on-close button:first-child {
+    margin-top: 0;
+}
+
+#modal-close-session.active .actions-on-close button:last-child {
+    opacity: .7;
+}
+/* <-- Modal Close Session */

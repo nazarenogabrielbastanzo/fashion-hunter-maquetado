@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="home-max-width-768px.css" media="(max-width: 768px)">
 
   <script src="https://kit.fontawesome.com/47e2b6eac0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -22,7 +23,7 @@
   <div class="title">
     <h1>Fashion&nbsp;Hunter</h1>
     <div class="right">
-      <p>Natacha Celeste <br /><small>Cerrar sesión</small></p>
+      <p>Natacha Celeste <br /><small id="close-session">Cerrar sesión</small></p>
       <img src="images/avatar/sara.png" class="img-rounded profile-photo" alt="Foto de perfil" />
     </div>
   </div>
@@ -183,6 +184,17 @@
       <img src="images/icons/right_arrow.png" alt="" />
     </div>
     <div class="horizontal-line"></div>
+  </div>
+
+  <!-- Modal Close Session -->
+  <div id="modal-close-session">
+    <div class="wrapper">
+      <p>¿Estás seguro que quieres cerrar sesión?</p>
+      <div class="actions-on-close">
+        <button type="button" id="accept-close-session-btn">Cerrar Sesión</button>
+        <button type="button" id="cancel-close-session-btn">Cancelar</button>
+      </div>
+    </div>
   </div>
 
   <script src="home.js"></script>
