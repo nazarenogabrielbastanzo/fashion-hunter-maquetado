@@ -23,8 +23,11 @@ elemCloseSession.addEventListener('click', () => {
   elemModalCloseSession.classList.add('active');
 });
 elemAcceptCloseSessionBtn.addEventListener('click', () => {
-  if (window.location.pathname.includes('/fashion-hunter-maquetado')) window.location.assign('/fashion-hunter-maquetado/index.html');
-  window.location.assign('/index.html');
+  if (window.location.pathname.includes('/fashion-hunter-maquetado')) {
+    window.location.assign('/fashion-hunter-maquetado/index.html');
+  } else {
+    window.location.assign('/index.html');
+  }
 });
 elemCancelCloseSessionBtn.addEventListener('click', () => {
   elemModalCloseSession.classList.remove('active');
