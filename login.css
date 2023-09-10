@@ -101,6 +101,7 @@ p {
   margin-bottom: 1rem;
   border: 0;
   letter-spacing: 1.5px;
+  cursor: pointer;
 }
 
 .far {
