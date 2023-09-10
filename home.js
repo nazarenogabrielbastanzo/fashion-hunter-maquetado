@@ -12,7 +12,7 @@ let oculto = true;
 let notificationsHidden = true;
 
 window.addEventListener('load', () => {
-  if (this.location.pathname.includes('/home.html')) {
+  if (this.location.pathname.includes('home.html')) {
     elemShortcutIconHome.classList.add('active-icon');
   }
 });
@@ -23,11 +23,7 @@ elemCloseSession.addEventListener('click', () => {
   elemModalCloseSession.classList.add('active');
 });
 elemAcceptCloseSessionBtn.addEventListener('click', () => {
-  if (window.location.pathname.includes('/fashion-hunter-maquetado')) {
-    window.location.assign('/fashion-hunter-maquetado/index.html');
-  } else {
-    window.location.assign('/index.html');
-  }
+  window.location.assign('index.html');
 });
 elemCancelCloseSessionBtn.addEventListener('click', () => {
   elemModalCloseSession.classList.remove('active');
