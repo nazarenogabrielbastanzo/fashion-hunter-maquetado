@@ -16,6 +16,7 @@
   --primary-font: "Pacifico", cursive;
   --secondary-font: "SF Pro Display", sans-serif;
   --background-color: white;
+  --opacity: .8;
 }
 body {
   margin: 0px;

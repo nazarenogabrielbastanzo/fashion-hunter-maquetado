@@ -108,7 +108,7 @@ div.wrapper {
     min-width: 100vw;
     height: 115%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, var(--opacity));
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -153,6 +153,6 @@ div.wrapper {
 }
 
 #modal-close-session.active .actions-on-close button:last-child {
-    opacity: .7;
+    opacity: var(--opacity);
 }
 /* <-- Modal Close Session */
