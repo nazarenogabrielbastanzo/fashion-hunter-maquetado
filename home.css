@@ -8,6 +8,7 @@
 div.wrapper {
   min-width: 320px;
   max-width: 470px;
+  font-family: var(--secondary-font);
 }
 
 .posts-container {
@@ -17,10 +18,11 @@ div.wrapper {
   display: flex;
   justify-content: center;
   width: 33.24rem;
-  /* border: 2px solid var(--other-color-3); */
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 10px;
+  margin: 0 .25rem;
+}
+
+.posts-container:last-child {
+  margin-bottom: 8rem;
 }
 
 .posts {
@@ -32,20 +34,38 @@ div.wrapper {
 
 .post {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.post-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  padding: 0;
+  margin: 0;
+  height: fit-content;
 }
 
 .img-rounded {
   width: 55px;
   height: 55px;
   object-fit: cover;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .user {
   display: inline;
-  margin-top: 0px;
-  margin-left: 0.5rem;
-  flex-basis: content;
+  margin-top: 0;
+  margin-left: .5rem;
+}
+p.user {
+  margin: 0;
+  font-size: large;
 }
 
 .username::before {
@@ -53,12 +73,14 @@ div.wrapper {
 }
 
 .elapsed {
-  flex-basis: 7rem;
   text-align: right;
 }
 
 .elapsed p {
-  margin-top: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: small;
 }
 
 .post-image {
@@ -66,7 +88,8 @@ div.wrapper {
   margin: 10px auto;
   width: 100%;
   height: 30rem;
-  border-radius: 20px;
+  border-radius: 1rem;
+  object-fit: cover;
 }
 
 .actions {
@@ -141,6 +164,7 @@ div.wrapper {
 #modal-close-session {
   display: none;
 }
+
 #modal-close-session.active {
   z-index: 1;
   position: fixed;
@@ -168,8 +192,9 @@ div.wrapper {
   padding-bottom: 10px;
   min-width: 300px;
   max-width: 470px;
-  padding: 2rem 0;
+  padding: 2rem;
   margin-top: 0;
+  font-size: medium;
 }
 
 #modal-close-session.active .wrapper p {
@@ -199,6 +224,7 @@ div.wrapper {
 #modal-close-session.active .actions-on-close button:last-child {
   opacity: var(--opacity);
 }
+
 /* <-- Modal Close Session */
 
 /* suggestions */
