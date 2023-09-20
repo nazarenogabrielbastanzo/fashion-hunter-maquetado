@@ -7,6 +7,7 @@ const elemCloseSession = document.querySelector('#close-session');
 const elemModalCloseSession = document.querySelector('#modal-close-session');
 const elemAcceptCloseSessionBtn = document.querySelector('#accept-close-session-btn');
 const elemCancelCloseSessionBtn = document.querySelector('#cancel-close-session-btn');
+const elemSavedIcon = document.querySelector('.saved-icon');
 
 let oculto = true;
 let notificationsHidden = true;
@@ -68,3 +69,7 @@ function mostrarNotifications() {
     notificationsHidden = true;
   }
 }
+
+elemSavedIcon.addEventListener('click', () => {
+  window.location.assign('guardadas.html');
+});
